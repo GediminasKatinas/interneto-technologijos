@@ -1,0 +1,26 @@
+body {
+  background-image: url('front_page_PNG.png'); 
+                   
+ no-repeat center center fixed;    
+     background-size:cover;
+}
+.logo{
+ position:absolute;
+
+    top: 0%;
+    left: 0%;
+}
+
+
+.mygtukai {
+     position:absolute;
+
+    top: 8%;
+    left: 50%;
+}
+.loginai {
+	 position:absolute;
+
+    top: 8%;
+    left: 90%;
+}
