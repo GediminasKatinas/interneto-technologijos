@@ -10,16 +10,25 @@ body {
     left: 0%;
 }
 
-.mygtukai {
-    position: absolute;
-    top: 3%;
+.mygtukai li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 3%;
     left: 30%;
+    margin: 0px;
+    padding: 0px;
 }
 
-.loginai {
-    position: absolute;
-    top: 3%;
+.loginai li {
+    display: inline-block;
+    list-style: none;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    margin-top: 3%;
     left: 90%;
+    padding: 5px;
+    margin: 5px;
 }
 
 .tekstas {
