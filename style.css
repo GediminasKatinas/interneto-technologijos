@@ -1,26 +1,38 @@
 body {
-  background-image: url('front_page_PNG.png'); 
-                   
- no-repeat center center fixed;    
-     background-size:cover;
+    background-image: url('Photos/front_page_PNG.png');
+    no-repeat center center fixed;
+    background-size: cover;
 }
-.logo{
- position:absolute;
 
+.logo {
+    position: absolute;
     top: 0%;
     left: 0%;
 }
 
-
-.mygtukai {
-     position:absolute;
-
-    top: 8%;
-    left: 50%;
+.mygtukai li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 3%;
+    left: 30%;
+    margin: 0px;
+    padding: 0px;
 }
-.loginai {
-	 position:absolute;
 
-    top: 8%;
+.loginai li {
+    display: inline-block;
+    list-style: none;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    margin-top: 3%;
     left: 90%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tekstas {
+    position: absolute;
+    top: 15%;
+    left: 13%;
 }
