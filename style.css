@@ -1,38 +1,106 @@
+
 body {
-    background-image: url('Photos/front_page_PNG.png');
-    no-repeat center center fixed;
+	font-family: sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	padding:0;
+	margin:0;
+    background-image: url('front_page_PNG.png');
+	no-repeat center center fixed;
     background-size: cover;
+	
+}
+.logo{
+	margin-left:25px;
+	margin-top:20px;
+
+}
+header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30px 10%;
+	height:50px;
+}
+.nav_links{
+	background-color:transparent;
+	padding: 9px 25px;
+white-space: nowrap;
+margin-right:150px;
+
+}
+.nav_links li {
+	display:inline-block;
+	padding: 0px 20px;
+
+	
+}
+.nav_links li a {
+	color:white;
+	text-decoration:none;
+}
+.nav_links li a:hover{
+	text-decoration:underline;
 }
 
-.logo {
-    position: absolute;
-    top: 0%;
-    left: 0%;
+button{
+	background-color:transparent;
+	padding: 9px 25px;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+color:white;
+
 }
 
-.mygtukai li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 3%;
-    left: 30%;
-    margin: 0px;
-    padding: 0px;
+header button:hover {
+	background-color:white;
+	color:black;
+	border-radius: 10px;
+	
+}
+.content button {
+	background: #ff5969;
+	font-weight: bolder;
+	border-radius: 10px;
+	padding: 20px 45px 20px 45px;
+	margin-left:225px;
+	margin-top:30px;
+}
+.content h1 {
+	color:white;
+	font-size: 4em;
+	line-height: 1em;
+		margin-left:225px;
+		
+
+
+}
+.content p {
+	font-size: 1.2em;
+	line-height: 1.1em;
+	margin-top: 30px;
+	margin-left:225px;
+	color:white;
+}
+footer {
+		margin-left:275px;
+		height: 150px;
+		margin-top:100px;
+		
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color:#4668F2 ;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot1 {
+  border-style: solid;
+  border-width: 3px;
+  border-color:orange;
 }
 
-.loginai li {
-    display: inline-block;
-    list-style: none;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-    margin-top: 3%;
-    left: 90%;
-    padding: 5px;
-    margin: 5px;
-}
-
-.tekstas {
-    position: absolute;
-    top: 15%;
-    left: 13%;
-}
+	
+	
