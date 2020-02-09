@@ -1,34 +1,45 @@
-body {
+.bgi {
     background-image: url('Photos/front_page_PNG.png');
-    no-repeat center center fixed;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .logo {
+    float: left;
     position: absolute;
-    top: 0%;
-    left: 0%;
+}
+
+.mygtukai {
+    float: left;
+    font-size: 20px;
+    list-style: none;
+    margin-left: 30%;
+    margin-top: 5%;
 }
 
 .mygtukai li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 3%;
-    left: 30%;
-    margin: 0px;
-    padding: 0px;
+    display: inline;
+}
+
+.mygtukai li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
 }
 
 .loginai li {
-    display: inline-block;
+    position: absolute;
     list-style: none;
+    left: 10px;
+    top: 0px;
     border-radius: 5px;
-    color: black;
-    background-color: white;
-    margin-top: 3%;
-    left: 90%;
     padding: 5px;
     margin: 5px;
+    color: black;
+    background-color: white;
 }
 
 .tekstas {
@@ -36,3 +47,30 @@ body {
     top: 15%;
     left: 13%;
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: violet;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
