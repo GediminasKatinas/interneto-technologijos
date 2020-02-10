@@ -1,106 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+html,
 body {
-	font-family: sans-serif;
-	font-size:15px;
-	line-height:1.5;
-	padding:0;
-	margin:0;
-    background-image: url('front_page_PNG.png');
-	no-repeat center center fixed;
+    height: 100%;
+    font-family: sans-serif;
+    background-image: url('Photos/front_page_PNG.png');
+    background-position: center fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-	
-}
-.logo{
-	margin-left:25px;
-	margin-top:20px;
-
-}
-header{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	padding:30px 10%;
-	height:50px;
-}
-.nav_links{
-	background-color:transparent;
-	padding: 9px 25px;
-white-space: nowrap;
-margin-right:150px;
-
-}
-.nav_links li {
-	display:inline-block;
-	padding: 0px 20px;
-
-	
-}
-.nav_links li a {
-	color:white;
-	text-decoration:none;
-}
-.nav_links li a:hover{
-	text-decoration:underline;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
-button{
-	background-color:transparent;
-	padding: 9px 25px;
-border: none;
-border-radius: 50px;
-cursor: pointer;
-color:white;
-
+.logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
-header button:hover {
-	background-color:white;
-	color:black;
-	border-radius: 10px;
-	
+.navigation-bar {
+    height: 80px;
+    width: 100%;
+    text-align: left;
 }
-.content button {
-	background: #ff5969;
-	font-weight: bolder;
-	border-radius: 10px;
-	padding: 20px 45px 20px 45px;
-	margin-left:225px;
-	margin-top:30px;
-}
-.content h1 {
-	color:white;
-	font-size: 4em;
-	line-height: 1em;
-		margin-left:225px;
-		
 
+.navigation-bar img {
+    float: left;
+    padding-top: 12px;
+    padding-left: 11%;
+}
 
+.navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 25px;
+    text-align: left;
+    display: inline;
+    vertical-align: top;
 }
-.content p {
-	font-size: 1.2em;
-	line-height: 1.1em;
-	margin-top: 30px;
-	margin-left:225px;
-	color:white;
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
 }
-footer {
-		margin-left:275px;
-		height: 150px;
-		margin-top:100px;
-		
+
+.navigation-bar li a {
+    color: white;
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 120px;
+    padding: 2px;
+    opacity: 1;
+    margin-left: 30px;
 }
+
+.navigation-bar a:hover {
+    border-bottom: solid white;
+    border-width: 3px;
+    padding: 2px 1px;
+}
+
+.navigation-bar a.laikinas {
+    border-bottom: solid white;
+    border-width: 3px;
+    padding: 2px 1px;
+}
+
+#menu {
+    float: right;
+    padding-right: 15%;
+}
+
+.loginai li {
+    display: inline;
+    list-style: none;
+    color: black;
+    right: 15%;
+    text-decoration: none;
+}
+
+.loginai a:hover {
+    font-weight: bold;
+    text-align: right;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.loginai a.lm {
+    font-weight: bold;
+    text-align: right;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#container {
+    min-height: 70%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+h1 {
+    margin-top: 7%;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 5em;
+    line-height: 1.2em;
+    margin-left: 12%;
+}
+
+p {
+    font-family: Verdana;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.HIT {
+    background: #ff5969;
+    color: white;
+    list-style: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 25px 35px;
+    margin-left: 12%;
+    margin-top: 60px;
+}
+
+#footer {
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 12%;
+    clear: both;
+}
+
 .dot {
-  height: 10px;
-  width: 10px;
-  background-color:#4668F2 ;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dot1 {
-  border-style: solid;
-  border-width: 3px;
-  border-color:orange;
+    margin-top: 13%;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 116, 211);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1.5%;
 }
 
-	
-	
+.circle {
+    background-color: rgb(0, 116, 211);
+    border: 3px solid rgb(247, 181, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgb(0, 116, 211);
+    height: 7px;
+    width: 7px;
+}

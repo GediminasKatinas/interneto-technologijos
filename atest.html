@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-            <img class="logo" src="VIZZY_logo.png" height="100" width="300">
-      <nav>
-                <ul class="nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Templates</a></li>
-                    <li><a href="#">Pricing</a></li>
+    <section>
+        <nav id="navigation-container">
+            <nav class="navigation-bar">
+                <ul>
+                    <img src="photos/VIZZY_logo1.png">
+                    <li><a class="laikinas" href="1">HOME</a></li>
+                    <li><a href="2">PRODUCTS</a></li>
+                    <li><a href="3">TEMPLATES</a></li>
+                    <li><a href="4">PRICING</a></li>
                 </ul>
-	  </nav>
-	<button>Sign in</button>
-	<button>Sign up</button>
-        </header>	
-	<div class="content">
-	   <h1><b>Create Stunning<br> Visual Media</b></h1>
-         <p>
-     Super simple tool to create trendy videos and pictures<br> for your ads, social media, blogs and websites.<br> Make your project stand out!</p>
-	</p>
-<button>create design &rarr;</button>
-	</div>
-	<footer>
-  <span class="dot dot1"></span>
-<span class="dot dot2"></span>
-<span class="dot dot3"></span>
-<span class="dot dot4"></span>
-</footer>
+                <ul class="loginai" id=menu>
+                    <li>
+                        <a href="#">SIGN IN</a></li>
+                    <li>
+                        <a class="lm" href="#">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </section>
+
+    <article id="container">
+        <h1><b>Create Stunning<br> Visual Media</b></h1>
+        <p>
+            Super simple tool to create trendy videos and pictures<br> for your ads, social media, blogs and websites.<br> Make your project stand out!</p>
+        </p>
+        <button class="HIT">CREATE DESIGN &rarr;</button>
+
+    </article>
+
+    <footer id="footer">
+        <ul class="navigation-bar">
+            <li class><span class="dot circle"></span></li>
+            <li><span class="dot"></span></li>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </ul>
+    </footer>
+
 </body>
 
 </html>
