@@ -1,38 +1,178 @@
-body {
-    background-image: url('Photos/front_page_PNG.png');
-    no-repeat center center fixed;
-    background-size: cover;
-}
-
-.logo {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-.mygtukai li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 3%;
-    left: 30%;
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.loginai li {
-    display: inline-block;
-    list-style: none;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-    margin-top: 3%;
-    left: 90%;
-    padding: 5px;
-    margin: 5px;
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-image: url('Photos/front_page_PNG.png');
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
-.tekstas {
+.logo {
     position: absolute;
-    top: 15%;
-    left: 13%;
+    left: 0px;
+    top: 0px;
+}
+
+.navigation-bar {
+    height: 80px;
+    width: 100%;
+    text-align: left;
+}
+
+.navigation-bar img {
+    float: left;
+    padding-top: 12px;
+    padding-left: 11%;
+}
+
+.navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 25px;
+    text-align: left;
+    display: inline;
+    vertical-align: top;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: white;
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 120px;
+    padding: 2px;
+    opacity: 1;
+    margin-left: 30px;
+}
+
+.navigation-bar a:hover {
+    border-bottom: solid white;
+    border-width: 3px;
+    padding: 2px 1px;
+}
+
+.navigation-bar a.laikinas {
+    border-bottom: solid white;
+    border-width: 3px;
+    padding: 2px 1px;
+}
+
+#menu {
+    float: right;
+    padding-right: 15%;
+}
+
+.loginai li {
+    display: inline;
+    list-style: none;
+    color: black;
+    right: 15%;
+    text-decoration: none;
+}
+
+.loginai a:hover {
+    font-weight: bold;
+    text-align: right;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.loginai a.lm {
+    font-weight: bold;
+    text-align: right;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#container {
+    min-height: 70%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+h1 {
+    margin-top: 7%;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 5em;
+    line-height: 1.2em;
+    margin-left: 12%;
+}
+
+p {
+    font-family: Verdana;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.HIT {
+    background: #ff5969;
+    color: white;
+    list-style: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 25px 35px;
+    margin-left: 12%;
+    margin-top: 60px;
+}
+
+#footer {
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 12%;
+    clear: both;
+}
+
+.dot {
+    margin-top: 13%;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 116, 211);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1.5%;
+}
+
+.circle {
+    background-color: rgb(0, 116, 211);
+    border: 3px solid rgb(247, 181, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgb(0, 116, 211);
+    height: 7px;
+    width: 7px;
 }
