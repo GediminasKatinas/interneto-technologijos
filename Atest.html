@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="Armando Testai" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div id="container">
-        <div class="logo">
-            <img src="Photos/VIZZY_logo.png">
-        </div>
-        <header>
-            <nav>
-                <ul class="mygtukai">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Templates</a></li>
-                    <li><a href="#">Pricing</a></li>
+    <section>
+        <nav id="navigation-container">
+            <nav class="navigation-bar">
+                <ul>
+                    <img src="photos/VIZZY_logo1.png">
+                    <li><a class="laikinas" href="1">HOME</a></li>
+                    <li><a href="2">PRODUCTS</a></li>
+                    <li><a href="3">TEMPLATES</a></li>
+                    <li><a href="4">PRICING</a></li>
                 </ul>
-                <ul class="loginai">
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <ul class="loginai" id=menu>
+                    <li>
+                        <a href="#">SIGN IN</a></li>
+                    <li>
+                        <a class="lm" href="#">SIGN UP</a></li>
                 </ul>
             </nav>
-        </header>
-        <header class="tekstas" style="color: white;">
-            <h1 style="font-size: 3em"><b>Create Stunning<br> Visual Media</b></h1>
-            <p style="color: white;">
-                Super simple tool to create trendy videos and pictures<br> for your ads, social media, blogs and websites.<br> Make your project stand out!</p>
-            </p>
-        </header>
+        </nav>
+    </section>
 
+    <article id="container">
+        <h1><b>Create Stunning<br> Visual Media</b></h1>
+        <p>
+            Super simple tool to create trendy videos and pictures<br> for your ads, social media, blogs and websites.<br> Make your project stand out!</p>
+        </p>
+        <button class="HIT">CREATE DESIGN &rarr;</button>
+
+    </article>
+
+    <footer id="footer">
+        <ul class="navigation-bar">
+            <li class><span class="dot circle"></span></li>
+            <li><span class="dot"></span></li>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </ul>
+    </footer>
 
 </body>
 
