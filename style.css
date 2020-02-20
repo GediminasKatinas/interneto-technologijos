@@ -101,56 +101,9 @@ body {
     padding: 10px 20px;
 }
 
-#container {
-    min-height: 70%;
-}
-
-#main {
-    overflow: auto;
-    padding-bottom: 100px;
-}
-
-h1 {
-    margin-top: 7%;
-    letter-spacing: 1px;
-    color: white;
-    font-size: 5em;
-    line-height: 1.2em;
-    margin-left: 12%;
-}
-
-p {
-    font-family: Verdana;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    margin-top: 20px;
-    margin-left: 12%;
-}
-
-button {
-    padding: 9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    color: white;
-}
-
-.HIT {
-    background: #ff5969;
-    color: white;
-    list-style: none;
-    font-weight: bolder;
-    border-radius: 10px;
-    padding: 25px 35px;
-    margin-left: 12%;
-    margin-top: 60px;
-}
-
 .footer {
     grid-area: 4 / 2 / 5 / 3;
-    margin-left: 6%;
+    margin-left: 12%;
 }
 
 .footer input[type="radio"] {
@@ -177,4 +130,207 @@ button {
     height: 20px;
     width: 20px;
     border: 5px solid #f7bb07;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin-top: 7%;
+        letter-spacing: 1px;
+        color: grey;
+        font-size: 2.5em;
+        line-height: 1em;
+        margin-left: 12%;
+    }
+    p {
+        font-family: Verdana;
+        color: grey;
+        letter-spacing: 1px;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        margin-top: 10px;
+        margin-left: 12%;
+    }
+    button {
+        padding: 9px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    .HIT {
+        background: #ff5969;
+        color: grey;
+        list-style: none;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 25px 35px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        margin-top: 7%;
+        letter-spacing: 1px;
+        color: green;
+        font-size: 5em;
+        line-height: 1.2em;
+        margin-left: 12%;
+    }
+    p {
+        font-family: Verdana;
+        color: green;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    button {
+        padding: 9px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    .HIT {
+        background: #ff5969;
+        color: green;
+        list-style: none;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 25px 35px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }
+    #menu {
+        float: left;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        margin-top: 7%;
+        letter-spacing: 1px;
+        color: blue;
+        font-size: 5em;
+        line-height: 1.2em;
+        margin-left: 12%;
+    }
+    p {
+        font-family: Verdana;
+        color: blue;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    button {
+        padding: 9px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    .HIT {
+        background: #ff5969;
+        color: blue;
+        list-style: none;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 25px 35px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        margin-top: 7%;
+        letter-spacing: 1px;
+        color: orange;
+        font-size: 5em;
+        line-height: 1.2em;
+        margin-left: 12%;
+    }
+    p {
+        font-family: Verdana;
+        color: orange;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    button {
+        padding: 9px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    .HIT {
+        background: #ff5969;
+        color: orange;
+        list-style: none;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 25px 35px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        margin-top: 7%;
+        letter-spacing: 1px;
+        color: red;
+        font-size: 5em;
+        line-height: 1.2em;
+        margin-left: 12%;
+    }
+    p {
+        font-family: Verdana;
+        color: red;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    button {
+        padding: 9px 25px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    .HIT {
+        background: #ff5969;
+        color: red;
+        list-style: none;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 25px 35px;
+        margin-left: 12%;
+        margin-top: 60px;
+    }
 }
