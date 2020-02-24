@@ -14,130 +14,61 @@ body {
     overflow: auto;
 }
 
-.logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.navigation-bar {
-    height: 80px;
-    width: 100%;
-    text-align: left;
-}
-
-.navigation-bar img {
-    float: left;
-    padding-top: 12px;
-    padding-left: 11%;
-}
-
-.navigation-bar ul {
-    padding: 0px;
-    margin: 0px;
-    padding-left: 25px;
-    text-align: left;
-    display: inline;
-    vertical-align: top;
-}
-
-.navigation-bar li {
-    list-style-type: none;
-    padding: 0px;
-    display: inline;
-}
-
-.navigation-bar li a {
-    color: white;
-    font-size: 18px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    line-height: 120px;
-    padding: 2px;
-    opacity: 1;
-    margin-left: 30px;
-}
-
-.navigation-bar a:hover {
-    border-bottom: solid white;
-    border-width: 3px;
-    padding: 2px 1px;
-}
-
-.navigation-bar a.laikinas {
-    border-bottom: solid white;
-    border-width: 3px;
-    padding: 2px 1px;
-}
-
-#menu {
-    float: right;
-    padding-right: 15%;
-}
-
-.loginai li {
-    display: inline;
-    list-style: none;
-    color: black;
-    right: 15%;
-    text-decoration: none;
-}
-
-.loginai a:hover {
-    font-weight: bold;
-    text-align: right;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-.loginai a.lm {
-    font-weight: bold;
-    text-align: right;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-.footer {
-    grid-area: 4 / 2 / 5 / 3;
-    margin-left: 12%;
-}
-
-.footer input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    position: relative;
-    background-color: #4677ff;
-    color: #4677ff;
-    top: 10px;
-    height: 15px;
-    width: 15px;
-    border: 0;
-    border-radius: 100%;
-    cursor: pointer;
-    margin-right: 20px;
-    outline: none;
-}
-
-.footer input[type="radio"]:checked {
-    background-color: #0043ff;
-    top: 12.5px;
-    height: 20px;
-    width: 20px;
-    border: 5px solid #f7bb07;
-}
-
 
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    .navbar-brand img {
+        float: left;
+        padding-top: 0px;
+        padding-left: 20%;
+    }
+    #meniu {
+        color: white;
+    }
+    #signup {
+        margin-left: 8px;
+        font-weight: bold;
+        text-align: right;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+    .navbar-nav li a {
+        font-size: 18px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        line-height: 25px;
+        padding: 1px;
+        margin-left: 30px;
+    }
+    .nav-item a.laikinas {
+        color: white;
+        position: relative;
+        border-bottom: solid white;
+        border-width: 3px;
+    }
+    #menu {
+        float: left;
+    }
+    .navbar .loginai li {
+        display: inline;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+    .navbar .loginai a:hover {
+        font-weight: bold;
+        text-align: right;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 18px;
+        margin-left: 8px;
+    }
     h1 {
-        margin-top: 7%;
+        margin-top: 3%;
         letter-spacing: 1px;
         color: grey;
         font-size: 2.5em;
@@ -168,7 +99,35 @@ body {
         border-radius: 10px;
         padding: 25px 35px;
         margin-left: 12%;
-        margin-top: 60px;
+        margin-top: 30px;
+    }
+    .footer {
+        grid-area: 4 / 2 / 5 / 3;
+        margin-left: 12%;
+    }
+    .footer input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        position: relative;
+        background-color: #4677ff;
+        color: #4677ff;
+        top: 10px;
+        height: 15px;
+        width: 15px;
+        border: 0;
+        border-radius: 100%;
+        cursor: pointer;
+        margin-right: 20px;
+        outline: none;
+    }
+    .footer input[type="radio"]:checked {
+        background-color: #0043ff;
+        top: 12.5px;
+        height: 20px;
+        width: 20px;
+        border: 5px solid #f7bb07;
     }
 }
 
@@ -211,7 +170,7 @@ body {
         margin-top: 60px;
     }
     #menu {
-        float: left;
+        margin-left: 10px;
     }
 }
 
@@ -252,6 +211,58 @@ body {
         padding: 25px 35px;
         margin-left: 12%;
         margin-top: 60px;
+    }
+    .navbar-brand img {
+        float: left;
+        padding-top: 10px;
+        padding-left: 100%;
+    }
+    .navbar-nav li a {
+        list-style-type: none;
+        padding: 0px;
+        display: inline-block;
+    }
+    .navbar-nav li a {
+        color: white;
+        font-size: 18px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        line-height: 30px;
+        padding: 2px;
+        opacity: 1;
+        margin-left: 20px;
+    }
+    .nav-item a.laikinas {
+        border-bottom: solid white;
+        border-width: 3px;
+    }
+    #menu {
+        float: left;
+        margin-left: -25px;
+    }
+    .navbar .loginai li {
+        display: inline;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+    .navbar .loginai a:hover {
+        font-weight: bold;
+        text-align: right;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 18px;
+        margin-left: 8px;
+    }
+    .navbar .loginai a.lm {
+        margin-left: 8px;
+        font-weight: bold;
+        text-align: right;
+        background-color: blueviolet;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 20px;
     }
 }
 
@@ -299,17 +310,71 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .navbar-brand img {
+        float: left;
+        padding-top: 10px;
+        padding-left: 68%;
+    }
+    .navbar-nav li {
+        color: white;
+        font-size: 18px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        text-decoration: white;
+        display: inline;
+        list-style: none;
+    }
+    .nav-item a.laikinas {
+        border-bottom: solid white;
+        border-width: 3px;
+    }
+    #meniu {
+        color: white;
+        font-size: 18px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        display: inline;
+        list-style: none;
+        margin-left: 20px;
+    }
+    #menu {
+        float: right;
+        margin-left: 15%;
+    }
+    .navbar .loginai li {
+        display: inline;
+        text-align: right;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+    .navbar .loginai a:hover {
+        font-weight: bold;
+        text-align: right;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 18px;
+        margin-left: 8px;
+    }
+    .navbar .loginai a.lm {
+        margin-left: 8px;
+        font-weight: bold;
+        text-align: right;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
     h1 {
         margin-top: 7%;
         letter-spacing: 1px;
-        color: red;
+        color: white;
         font-size: 5em;
         line-height: 1.2em;
         margin-left: 12%;
     }
     p {
         font-family: Verdana;
-        color: red;
+        color: white;
         letter-spacing: 1px;
         font-size: 1.1em;
         line-height: 1.2em;
@@ -325,12 +390,40 @@ body {
     }
     .HIT {
         background: #ff5969;
-        color: red;
+        color: white;
         list-style: none;
         font-weight: bolder;
         border-radius: 10px;
         padding: 25px 35px;
         margin-left: 12%;
         margin-top: 60px;
+    }
+    .footer {
+        grid-area: 4 / 2 / 5 / 3;
+        margin-left: 12%;
+    }
+    .footer input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        position: relative;
+        background-color: #4677ff;
+        color: #4677ff;
+        top: 10px;
+        height: 15px;
+        width: 15px;
+        border: 0;
+        border-radius: 100%;
+        cursor: pointer;
+        margin-right: 20px;
+        outline: none;
+    }
+    .footer input[type="radio"]:checked {
+        background-color: #0043ff;
+        top: 12.5px;
+        height: 20px;
+        width: 20px;
+        border: 5px solid #f7bb07;
     }
 }
