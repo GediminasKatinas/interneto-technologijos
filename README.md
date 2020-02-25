@@ -1,2 +1,1 @@
-# Interneto-Technologijos
-# Trečio laboro link
+# interneto-technologijos
