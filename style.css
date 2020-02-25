@@ -1,40 +1,18 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
 * {
     margin: 0px;
     padding: 0px;
 }
 
-<<<<<<< HEAD
-html,
-body {
-    background-image: url('Photos/front_page_PNG.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-=======
 .navbar-brand {
     margin-left: 3%;
     width: auto;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
 }
 
 .nav.navbar-nav.nav-left li.active a {
     color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-    font-size: 16px;
-=======
     font-size: 13px;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     font-style: bold;
     box-shadow: 0em 0.3em white;
 }
@@ -43,15 +21,9 @@ body {
     color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-    font-size: 16px;
-    font-style: bold;
-    margin-left: 2em;
-=======
     font-size: 130%;
     font-style: bold;
     margin-left: 200%;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     padding-bottom: 0.3em;
     display: inline-block;
 }
@@ -60,211 +32,26 @@ body {
     box-shadow: 0em 0.3em white;
 }
 
-<<<<<<< HEAD
-.navbar-toggler {
-    color: white;
-}
-
-#menu {
-    float: right;
-    padding-right: 15%;
-}
-
-.navbar-text {
-    display: inline;
-    list-style: none;
-    color: black;
-    right: 15%;
-    text-decoration: none;
-}
-
-.navbar-nav.ml-auto li.active a {
-    display: inline;
-    list-style: none;
-    color: black;
-=======
 .navbar-nav.ml-auto {
     display: inline;
     list-style: none;
     color: red;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     right: 15%;
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-.navbar-nav.ml-auto li.active a:hover {
-    font-weight: bold;
-    text-align: right;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-.navbar-nav.ml-auto li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-style: bold;
-    margin-top: 0.3em;
-}
-
-#main {
-    overflow: auto;
-    padding-bottom: 100px;
-}
-
-.col-md-16.col-lg-5 h2 {
-    margin-top: 7%;
-    letter-spacing: 1px;
-    color: white;
-    font-size: 3em;
-    line-height: 1.2em;
-    margin-left: 12%;
-}
-
-.col-md-16.col-lg-5 p {
-    font-family: Verdana;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    margin-top: 20px;
-    margin-left: 12%;
-}
-
-button {
-    padding: 9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    color: white;
-}
-
-.btn.btn-primary {
-    background: #ff5969;
-    color: white;
-    list-style: none;
-    font-weight: bolder;
-    border-radius: 10px;
-    padding: 25px 35px;
-    margin-left: 12%;
-    margin-top: 60px;
-}
-
-.footer {
-    grid-area: 4 / 2 / 5 / 3;
-    margin: auto 0;
-}
-
-.footer input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    position: relative;
-    background-color: #4677ff;
-    color: #4677ff;
-    top: 10px;
-    height: 15px;
-    width: 15px;
-    border: 0;
-    border-radius: 100%;
-    cursor: pointer;
-    margin-right: 20px;
-    outline: none;
-}
-
-.footer input[type="radio"]:checked {
-    background-color: #0043ff;
-    top: 12.5px;
-    height: 20px;
-    width: 20px;
-    border: 5px solid #f7bb07;
-=======
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-html,
-body {
-    height: 100%;
-    font-family: sans-serif;
-    background-image: url('Photos/front_page_PNG.png');
-    background-position: center fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-}
-
-. .nav.navbar-nav.nav-left li.active a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-style: bold;
-    box-shadow: 0em 0.3em white;
-}
-
-.nav.navbar-nav.nav-left li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-style: bold;
-    margin-left: 2em;
-    padding-bottom: 0.3em;
-    display: inline-block;
-}
-
-.nav.navbar-nav.nav-left li a:hover {
-    box-shadow: 0em 0.3em white;
-}
-
-.navbar-toggler {
-    color: white;
-}
-
-#menu {
-    float: right;
-    padding-right: 15%;
-}
-.navbar-nav.ml-auto. {
-    display: inline;
-    list-style: none;
-    color: blue;
-    right: 15%;
-    text-decoration: none;
-}
-.navbar-nav.ml-auto li.active a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 0.5em;
-    margin: 0 0.3em 0.3em 0;
-=======
 .navbar-nav.ml-auto li.active a {
     border-radius: 0.5em;
     margin: 0 0.3em 0.3em 0;
     display: inline-block;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     color: rgb(14, 14, 105);
     text-align: center;
-<<<<<<< HEAD
-    margin-right: 5rem;
-    font-weight: 900;
-=======
     font-weight: 900;
     margin-right: 5rem;
     padding: 10px 20px;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
 }
 
 .navbar-nav.ml-auto li.active a:hover {
@@ -277,11 +64,7 @@ body {
     background-color: white;
     text-align: center;
     font-weight: 900;
-<<<<<<< HEAD
-    margin-right:5rem;
-=======
     margin-right: 5rem;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     padding: 10px 20px;
 }
 
@@ -289,24 +72,11 @@ body {
     color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-    font-size: 16px;
-=======
     font-size: 13px;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     font-style: bold;
     margin-top: 0.3em;
 }
 
-<<<<<<< HEAD
-
-#main {
-    overflow: auto;
-    padding-bottom: 100px;
-}
-
-=======
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
 .col-md-16.col-lg-5 h2 {
     margin-top: 7%;
     letter-spacing: 1px;
@@ -345,27 +115,12 @@ button {
     margin-top: 40px;
 }
 
-<<<<<<< HEAD
- .footer {
-	grid-area: 4 / 2 / 5 / 3;
-    margin-left: 6%;
-    
-}
-
-.footer input[type="radio"] {
-	-webkit-appearance: none;
-=======
 .footer input[type="radio"] {
     -webkit-appearance: none;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     -moz-appearance: none;
     appearance: none;
     display: inline-block;
     position: relative;
-<<<<<<< HEAD
-
-=======
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     background-color: #4677ff;
     color: #4677ff;
     top: 10px;
@@ -373,24 +128,11 @@ button {
     width: 15px;
     border: 0;
     border-radius: 100%;
-<<<<<<< HEAD
-    cursor: pointer;     
-=======
     cursor: pointer;
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
     margin-right: 20px;
     outline: none;
 }
 
-<<<<<<< HEAD
- .footer input[type="radio"]:checked {
-	background-color: #0043ff;
-	top: 12.5px;
-	height: 20px;
-    width: 20px;
-	border: 5px solid #f7bb07;
->>>>>>> 51166cbc677daa14362214843a483616ff15b0c4
-=======
 .footer input[type="radio"].active {
     background-color: #0043ff;
     top: 8px;
@@ -926,5 +668,4 @@ button {
         width: 20px;
         border: 5px solid #f7bb07;
     }
->>>>>>> 6d21a91b4791536fa0a6b2a83c85bf57cd07a116
 }
