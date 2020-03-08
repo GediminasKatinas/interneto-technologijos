@@ -1,0 +1,38 @@
+
+<Guns_menu>
+    <gun>
+        <name> Thompson M1921 </name>
+        <price>$10,5</price>
+        <description>
+        A submachine gun, abbreviated SMG, is a magazine-fed, automatic carbine designed to shoot handgun cartridges. The term "submachine gun" was coined by John T. Thompson, the inventor of the Thompson submachine gun
+        </description>
+    </gun>
+<gun>
+<name>Bazooka3000x </name>
+<price>$331 </price>
+<description>
+Bazooka (/bəˈzuːkə/)[8] is the common name for a man-portable recoilless anti-tank rocket launcher weapon, widely deployed by the United States Army
+</description>
+</gun>
+<Pistols>
+<name> 2mm Kolibri </name>
+<price>$3 </price>
+<description>
+The 2mm Kolibri (also known as the 2.7mm Kolibri Car Pistol or 2.7×9mm Kolibri) was the smallest commercially available centerfire cartridge,[2] patented in 1910 and introduced in 1914 by Franz Pfannl, an Austrian watchmaker, with financial support from Georg Grabner.
+</description>
+</Pistols>
+<Knifes>
+<name>Grad knife </name>
+<price>$ 10</price>
+<description>
+Daug info
+</description>
+</Knifes>
+<Grenades>
+<name> Grenade </name>
+<price>$100 </price>
+<description>
+A grenade is an explosive weapon typically thrown by hand, but can also refer to projectiles shot out of grenade launchers
+</description>
+</Grenades>
+</Guns_menu>
