@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    form {
+        max-width: 300px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+        position: relative;
+        padding-top: 40px;
+    }
+    
+    label,
+    input {
+        display: inline-block;
+    }
+    
+    label {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #B0BEC5;
+    }
+    
+    input {
+        width: 100%;
+        padding: 3px;
+        outline: 0;
+        border: 2px solid #B0BEC5;
+    }
+</style>
+
+<body>
+    <form id="myForm" name="myForm" action="index.html" target="_blank" method="GET">
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="Name" minlength="2" pattern="[A-Za-z]{1,32}" required oninvalid="this.setCustomValidity('Please Enter valid name using only letters and atleast 2 of them')" oninput="setCustomValidity('')"></input><br>
+
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="LastName"><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="Male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+
+        <label for="driver_license">Driver License:</label><br>
+        <label for="driver_licesnse">Yes</label>
+        <input type="radio" id="driver_license" name="driver_license" value="Yes">
+        <label for="driver_licesnse">No</label>
+        <input type="radio" id="driver_license" name="driver_license" value="No"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" required oninvalid="this.setCustomValidity('Please Enter valid email blablabla@mail.com')" oninput="setCustomValidity('')"></input><br>
+
+        <label for="age">Age:</label>
+        <input type="date" id="age" name="age" min="1900-01-01" required><br>
+
+        <label for="pnr">Phone number:</label>
+        <input type="text" id="pnr" name="Phone" placeholder="+37062524878" pattern="+3706[0-9]{7}"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+    <script>
+        (function() {
+
+            var input = document.getElementById('Name');
+            var form = document.getElementById('myForm');
+            var elem = document.createElement('div');
+            elem.id = 'notify';
+            elem.style.display = 'none';
+
+            form.appendChild(elem);
+
+            input.addEventListener('invalid', function(event) {
+                event.preventDefault();
+                if (!event.target.validity.valid) {
+                    input.className = 'invalid animated shake';
+                    elem.textContent = 'Username should only contain lowercase letters e.g. john';
+                    elem.className = 'error';
+                    elem.style.display = 'block';
+                }
+            });
+
+            input.addEventListener('input', function(event) {
+                if ('block' === elem.style.display) {
+                    input.className = '';
+                    elem.style.display = 'none';
+                }
+            });
+
+        })();
+
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+
+        function allLetter(inputtxt) {
+            var letters = /^[A-Za-z]+$/;
+            placeholder
+            if (inputtxt.value.match(letters)) {
+                place('Your name have accepted : you can try another');
+                return true;
+            } else {
+                alert('Please input alphabet characters only');
+                return false;
+            }
+        }
+
+        function ValidateEmail(inputText) {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (inputText.value.match(mailformat)) {
+                document.myForm.email.focus();
+                return true;
+            } else {
+                alert("You have entered an invalid email address!");
+                document.myForm.email.focus();
+                return false;
+            }
+        }
+
+        function ValidateName(inputText) {
+            var nameformat = /[A-Z]{1}+[a-z]{32}/;
+            if (inputText.value.match(nameformat)) {
+                document.myForm.Name.focus();
+                return true;
+            } else {
+                alert("You have entered an invalid name")
+                document.myForm.Name.focus();
+                return false;
+            }
+        }
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
