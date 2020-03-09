@@ -3,10 +3,23 @@
     padding: 0px;
 }
 
-body {
+html {
     height: 100%;
-    padding-bottom: 30px;
-    overflow: auto;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    ;
+}
+
+.footeris {
+    position: absolute;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: goldenrod;
 }
 
 .navbar-brand {
@@ -677,17 +690,6 @@ button {
     }
 }
 
-footer {
-    background-color: grey;
-    color: white;
-    position: relative;
-    height: 30px;
-    margin-top: -30px;
-    clear: both;
-    text-align: center;
-    width: 100%;
-}
-
 table,
 th,
 td {
@@ -699,6 +701,11 @@ td {
     padding-right: 10px;
 }
 
+th[scope="col"] {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 tr,
 th,
 td {
@@ -706,22 +713,33 @@ td {
     padding: 0px;
 }
 
+.table.table-striped.table-dark {
+    margin-left: 20px;
+    width: 90%;
+}
+
+.list-group {
+    margin-left: 20px;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
 .xmlparsing {
     background-color: black;
     margin-left: 10px;
 }
 
-
-/* The grid: Four equal columns that floats next to each other */
+.row {
+    width: 80%;
+    margin-left: 10px;
+}
 
 .column {
     float: left;
-    width: 25%;
-    padding: 10px;
+    margin-left: 10px;
+    width: 20%;
+    align-items: center;
 }
-
-
-/* Style the images inside the grid */
 
 .column img {
     opacity: 0.8;
@@ -732,42 +750,67 @@ td {
     opacity: 1;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-
-/* The expanding image container */
-
 .container {
     position: relative;
     display: none;
 }
 
-
-/* Expanding image text */
-
 #imgtext {
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 15px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
-
-
-/* Closable button inside the expanded image */
 
 .closebtn {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: -20px;
+    right: 14px;
     color: white;
     font-size: 35px;
     cursor: pointer;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input,
+input:valid {
+    border-color: green;
+}
+
+form {
+    max-width: 300px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    position: relative;
+    padding-top: 40px;
+}
+
+label,
+input {
+    display: inline-block;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #B0BEC5;
+}
+
+input {
+    width: 100%;
+    padding: 3px;
+    outline: 0;
+    border: 2px solid #B0BEC5;
 }

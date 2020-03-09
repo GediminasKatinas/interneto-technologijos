@@ -142,26 +142,42 @@
                     <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
                 <div class="modal-body mx-3">
-                    <div class="md-form mb-5">
-                        <input type="Name" id="defaultForm-email" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-email">First Name</label>
-                    </div>
-                    <div class="md-form mb-4">
-                        <input type="SirName" id="defaultForm-email" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-email">Last Name</label>
-                    </div>
-                    <div class="md-form mb-4">
-                        <input type="Gender" id="defaultForm-email" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-email">Gender</label>
-                    </div>
-                    <div class="md-form mb-4">
-                        <input type="email" id="defaultForm-email" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-                    </div>
+
 
                     <div class="md-form mb-4">
-                        <input type="phoneNumber" id="defaultForm-pass" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="defaultForm-pass">PhoneNuber</label>
+                        <form id="myForm" name="myForm" action="index.html" target="_blank" method="GET">
+
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="Name" minlength="2" pattern="[A-Za-z]{1,32}" required oninvalid="this.setCustomValidity('Please Enter valid name using only letters and atleast 2 of them')" oninput="setCustomValidity('')"></input><br>
+
+
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="LastName"><br>
+
+                            <label for="gender">Gender:</label><br>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label><br>
+
+                            <label for="driver_license">Driver License:</label><br>
+                            <label for="driver_licesnse">Yes</label>
+                            <input type="radio" id="driver_license" name="driver_license" value="Yes">
+                            <label for="driver_licesnse">No</label>
+                            <input type="radio" id="driver_license" name="driver_license" value="No"><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" required oninvalid="this.setCustomValidity('Please Enter valid email blablabla@mail.com')" oninput="setCustomValidity('')"></input><br>
+
+                            <label for="age">Age:</label>
+                            <input type="date" id="age" name="age" min="1900-01-01" required><br>
+
+                            <label for="pnr">Phone number:</label>
+                            <input type="text" id="pnr" name="Phone" placeholder="+37062524878" pattern="+3706[0-9]{7}"><br>
+                            <input type="submit" value="Submit">
+                        </form>
                     </div>
 
                 </div>
@@ -194,7 +210,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
