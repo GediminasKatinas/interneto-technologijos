@@ -4,9 +4,7 @@
     
 }
 
-html {
-    height: 100%;
-}
+
 
 body {
     min-height: 100%;
@@ -19,7 +17,7 @@ body {
     height: 40px;
     left: 0;
     right: 0;
-    bottom: 0px;
+    top:682px;
     background-color: goldenrod;
 }
 

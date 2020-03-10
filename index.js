@@ -10,7 +10,7 @@ var arrLang = {
         'ourteam' : 'our team',
         'signin'  : 'sign in',
         'signup'  : 'sign up',
-        'copyright': 'copyright by me heehe',
+        'copyright': 'Copyright &copy;2020',
         'languages': 'languages',
         'lt' : 'Lithuanian',
         'en' : 'English',
@@ -32,7 +32,7 @@ var arrLang = {
         'ourteam' : 'musu komanda',
         'signin'  : 'prisijungti',
         'signup'  : 'registruotis',
-        'copyright': 'autorines teises by me',
+        'copyright': 'autorines teises &copy;2020',
         'languages': 'kalbos',
         'lt' : 'lietuviu',
         'en' : 'anglu',
@@ -72,10 +72,15 @@ $(function(){
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
         
-        $('modalLoginForm').each(function(index, element){
+        $('.footeris p').each(function(index, element){
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        
+        $('.modal-header h4').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+        $('.md-form label').each(function(index, element){
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
     });
 });
 //TEMPLATE
@@ -93,7 +98,7 @@ if ('content' in document.createElement('template')) {
 
 //XML PARSINGAS
 
-function loadinimas() {
+function loadDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
