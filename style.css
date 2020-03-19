@@ -1,10 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
 }
-
-
 
 body {
     min-height: 100%;
@@ -17,7 +14,7 @@ body {
     height: 40px;
     left: 0;
     right: 0;
-    top:682px;
+    top: 682px;
     background-color: goldenrod;
 }
 
@@ -58,7 +55,6 @@ body {
     color: red;
     right: 15%;
     text-decoration: none;
-    
 }
 
 .navbar-nav.ml-auto li.active a {
@@ -817,4 +813,28 @@ input {
     padding: 3px;
     outline: 0;
     border: 2px solid #B0BEC5;
+}
+
+.calculator {
+    width: 350px;
+    height: 500px;
+    padding: 5px;
+    background-color: grey;
+}
+
+.calculator table,
+tbody,
+td,
+tr {
+    border: none;
+}
+
+.calb {
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: lightgrey;
+    color: goldenrod;
 }

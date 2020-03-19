@@ -1,84 +1,84 @@
 console.log("Gaidys");
 var arrLang = {
-    'en' : {
-        'create-design' : 'create design',
-        'home' : 'HOME',
-        'products' : 'Products',
-        'templates' : 'templates',
-        'pricing' : 'pricing',
-        'aboutus' : 'about us',
-        'ourteam' : 'our team',
-        'signin'  : 'sign in',
-        'signup'  : 'sign up',
+    'en': {
+        'create-design': 'create design',
+        'home': 'HOME',
+        'products': 'Products',
+        'templates': 'templates',
+        'pricing': 'pricing',
+        'aboutus': 'about us',
+        'ourteam': 'our team',
+        'signin': 'sign in',
+        'signup': 'sign up',
         'copyright': 'Copyright &copy;2020',
         'languages': 'languages',
-        'lt' : 'Lithuanian',
-        'en' : 'English',
-        'h2' : 'Create Stunning Visual Media',
-        'p' : 'Super simple tool to create trendy videos and pictures for your ads, social media, blogs and website. Make your project stand out!',
-        'name' : 'your username',
-        'email' : 'your email',
-        'pass' : 'your password',
-        'login' : 'log in'
-        
+        'lt': 'Lithuanian',
+        'en': 'English',
+        'h2': 'Create Stunning Visual Media',
+        'p': 'Super simple tool to create trendy videos and pictures for your ads, social media, blogs and website. Make your project stand out!',
+        'name': 'your username',
+        'email': 'your email',
+        'pass': 'your password',
+        'login': 'log in'
+
     },
-    'lt' : {
-        'create-design' : 'Sukurkite dizaina',
-        'home' : 'NAMAI',
-        'products' : 'Produktai',
-        'templates' : 'templeitai',
-        'pricing' : 'kainos',
-        'aboutus' : 'apie mus',
-        'ourteam' : 'musu komanda',
-        'signin'  : 'prisijungti',
-        'signup'  : 'registruotis',
+    'lt': {
+        'create-design': 'Sukurkite dizaina',
+        'home': 'NAMAI',
+        'products': 'Produktai',
+        'templates': 'templeitai',
+        'pricing': 'kainos',
+        'aboutus': 'apie mus',
+        'ourteam': 'musu komanda',
+        'signin': 'prisijungti',
+        'signup': 'registruotis',
         'copyright': 'autorines teises &copy;2020',
         'languages': 'kalbos',
-        'lt' : 'lietuviu',
-        'en' : 'anglu',
-        'h2' : 'Kurkite stulbinama visual media',
-        'p' : 'Paprastas irankis kurti siuolaikiskus filmukus ir vaizdus jusu reklamoms,socialiems tinklams,blogams ir svetainems.Tegu jusu projektas issiskiria!',
-        'name' : 'jusu prisijungimo vardas',
-        'email' : 'jusu pastas',
-        'pass' : 'jusu slaptazodis',
-        'login' : 'prisijungti'
+        'lt': 'lietuviu',
+        'en': 'anglu',
+        'h2': 'Kurkite stulbinama visual media',
+        'p': 'Paprastas irankis kurti siuolaikiskus filmukus ir vaizdus jusu reklamoms,socialiems tinklams,blogams ir svetainems.Tegu jusu projektas issiskiria!',
+        'name': 'jusu prisijungimo vardas',
+        'email': 'jusu pastas',
+        'pass': 'jusu slaptazodis',
+        'login': 'prisijungti'
 
-     }
+    }
 };
-$(function(){
-    $('.dropdown-item').click(function(){
+$(function() {
+    $('.dropdown-item').click(function() {
         var lang = $(this).attr('id');
 
-        $('.nav-link').each(function(index, element){
+        $('.nav-link').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.button').each(function(index, element){
+        $('.button').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.modal-footer button').each(function(index, element){
+        $('.modal-footer button').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.modal-footer button').each(function(index, element){
+        $('.modal-footer button').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.col-md-16.col-lg-5 h2').each(function(index, element){
+        $('.col-md-16.col-lg-5 h2').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.col-md-16.col-lg-5 p').each(function(index, element){
+        $('.col-md-16.col-lg-5 p').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-      
-        $('.btn.btn-primary').each(function(index, element){
+
+        $('.btn.btn-primary').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        
-        $('.footeris p').each(function(index, element){
+
+        $('.footeris p').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.modal-header h4').each(function(index, element){
+        $('.modal-header h4').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
-        $('.md-form label').each(function(index, element){
+        $('.md-form label').each(function(index, element) {
             $(this).text(arrLang[lang][$(this).attr('key')]);
         });
     });
@@ -127,7 +127,7 @@ function xmlparsing(xml) {
     }
     document.getElementById("demo").innerHTML = table;
 }
-
+//IMG GALLERY
 
 function imggallery(imgs) {
     // Get the expanded image
@@ -140,4 +140,25 @@ function imggallery(imgs) {
     imgText.innerHTML = imgs.alt;
     // Show the container element (hidden with CSS)
     expandImg.parentElement.style.display = "block";
+}
+
+//CALCULATOR
+
+function insert(num) {
+    document.calculator.calcview.value = document.calculator.calcview.value + num;
+
+}
+
+function equal() {
+    if (document.calculator.calcview.value)
+        document.calculator.calcview.value = eval(document.calculator.calcview.value);
+}
+
+function clean() {
+    document.calculator.calcview.value = "";
+}
+
+function back() {
+    var temporary = document.calculator.calcview.value;
+    document.calculator.calcview.value = temporary.substring(0, temporary.length - 1)
 }
