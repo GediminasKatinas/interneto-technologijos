@@ -1,4 +1,5 @@
 console.log("Gaidys");
+var lang;
 var arrLang = {
     'en': {
         'create-design': 'create design',
@@ -45,44 +46,137 @@ var arrLang = {
 
     }
 };
-$(function() {
-    $('.dropdown-item').click(function() {
-        var lang = $(this).attr('id');
+$(function(){
+    $('.dropdown-item').click(function(){
+        localStorage.setItem(lang, $(this).attr('id'))
+        window.location.reload()
+    });
 
         $('.nav-link').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.button').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.modal-footer button').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.modal-footer button').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.col-md-16.col-lg-5 h2').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.col-md-16.col-lg-5 p').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
 
         $('.btn.btn-primary').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
 
         $('.footeris p').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.modal-header h4').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
         $('.md-form label').each(function(index, element) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
         });
+        $('.dropdown').each(function(index, element) {
+            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+        });
+          $('.nav-link').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-});
+    $('.button').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-footer button').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-footer button').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 h1 span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p1 span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.btn.btn-primary').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('[data-translate]').each(function (index, element) {
+        $(this).attr('placeholder', arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-2.mb-3 h6 a').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.footer-copyright.text-center.py-3 a').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-body h4').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-footer button').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 h2 span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p2 span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 h3 span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p3 span').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.carousel-inner h2').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.t.container h2').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.t.container th').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.t.container td').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.container h2').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.container a').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.btn.btn-third').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-header h5').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-body small').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.btn.btn-primary1').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.btn.btn-secondary').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.form-check-label').each(function(index, element){
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });$('[data-translate]').each(function (index, element) {
+        $(this).attr('placeholder', arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    });
 //TEMPLATE
 
 if ('content' in document.createElement('template')) {
