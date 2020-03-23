@@ -10,10 +10,11 @@ body {
 }
 
 .footeris {
-    position: absolute;
+    position: fixed;
     height: 40px;
     left: 0;
     right: 0;
+    bottom: 0px;
     background-color: goldenrod;
 }
 
