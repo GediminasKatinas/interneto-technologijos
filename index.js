@@ -5,36 +5,36 @@ var arrLang = {
         'create-design': 'create design',
         'home': 'HOME',
         'products': 'Products',
-        'templates': 'templates',
-        'pricing': 'pricing',
-        'aboutus': 'about us',
-        'ourteam': 'our team',
-        'signin': 'sign in',
-        'signup': 'sign up',
+        'templates': 'Templates',
+        'pricing': 'Pricing',
+        'aboutus': 'About Us',
+        'ourteam': 'Our Team',
+        'signin': 'Sign in',
+        'signup': 'Sign up',
         'copyright': 'Copyright &copy;2020',
-        'languages': 'languages',
+        'languages': 'Languages',
         'lt': 'Lithuanian',
         'en': 'English',
         'h2': 'Create Stunning Visual Media',
         'p': 'Super simple tool to create trendy videos and pictures for your ads, social media, blogs and website. Make your project stand out!',
-        'name': 'your username',
-        'email': 'your email',
-        'pass': 'your password',
-        'login': 'log in'
+        'name': 'Your Username',
+        'email': 'Your Email',
+        'pass': 'Your Password',
+        'login': 'Log In'
 
     },
     'lt': {
         'create-design': 'Sukurkite dizaina',
         'home': 'NAMAI',
         'products': 'Produktai',
-        'templates': 'templeitai',
-        'pricing': 'kainos',
-        'aboutus': 'apie mus',
-        'ourteam': 'musu komanda',
-        'signin': 'prisijungti',
-        'signup': 'registruotis',
-        'copyright': 'autorines teises &copy;2020',
-        'languages': 'kalbos',
+        'templates': 'Templeitai',
+        'pricing': 'Kainos',
+        'aboutus': 'Apie mus',
+        'ourteam': 'Musu komanda',
+        'signin': 'Prisijungti',
+        'signup': 'Registruotis',
+        'copyright': 'Autorines teises &copy;2020',
+        'languages': 'Kalbos',
         'lt': 'lietuviu',
         'en': 'anglu',
         'h2': 'Kurkite stulbinama visual media',
@@ -46,137 +46,138 @@ var arrLang = {
 
     }
 };
-$(function(){
-    $('.dropdown-item').click(function(){
+$(function() {
+    $('.dropdown-item').click(function() {
         localStorage.setItem(lang, $(this).attr('id'))
         window.location.reload()
     });
 
-        $('.nav-link').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.button').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.modal-footer button').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.modal-footer button').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.col-md-16.col-lg-5 h2').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.col-md-16.col-lg-5 p').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
+    $('.nav-link').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.button').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-footer button').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.modal-footer button').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 h2').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
 
-        $('.btn.btn-primary').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
+    $('.btn.btn-primary').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
 
-        $('.footeris p').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.modal-header h4').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.md-form label').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-        $('.dropdown').each(function(index, element) {
-            $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-        });
-          $('.nav-link').each(function(index, element){
+    $('.footeris p').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.button').each(function(index, element){
+    $('.modal-header h4').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.modal-footer button').each(function(index, element){
+    $('.md-form label').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.modal-footer button').each(function(index, element){
+    $('.dropdown').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 h1 span').each(function(index, element){
+    $('.nav-link').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 p span').each(function(index, element){
+    $('.button').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 p1 span').each(function(index, element){
+    $('.modal-footer button').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.btn.btn-primary').each(function(index, element){
+    $('.modal-footer button').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('[data-translate]').each(function (index, element) {
+    $('.col-md-16.col-lg-5 h1 span').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p span').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.col-md-16.col-lg-5 p1 span').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('.btn.btn-primary').each(function(index, element) {
+        $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
+    });
+    $('[data-translate]').each(function(index, element) {
         $(this).attr('placeholder', arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-2.mb-3 h6 a').each(function(index, element){
+    $('.col-md-2.mb-3 h6 a').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.footer-copyright.text-center.py-3 a').each(function(index, element){
+    $('.footer-copyright.text-center.py-3 a').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.modal-body h4').each(function(index, element){
+    $('.modal-body h4').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.modal-footer button').each(function(index, element){
+    $('.modal-footer button').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 h2 span').each(function(index, element){
+    $('.col-md-16.col-lg-5 h2 span').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 p2 span').each(function(index, element){
+    $('.col-md-16.col-lg-5 p2 span').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 h3 span').each(function(index, element){
+    $('.col-md-16.col-lg-5 h3 span').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.col-md-16.col-lg-5 p3 span').each(function(index, element){
+    $('.col-md-16.col-lg-5 p3 span').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.carousel-inner h2').each(function(index, element){
+    $('.carousel-inner h2').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.t.container h2').each(function(index, element){
+    $('.t.container h2').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.t.container th').each(function(index, element){
+    $('.t.container th').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.t.container td').each(function(index, element){
+    $('.t.container td').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.container h2').each(function(index, element){
+    $('.container h2').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.container a').each(function(index, element){
+    $('.container a').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.btn.btn-third').each(function(index, element){
+    $('.btn.btn-third').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.modal-header h5').each(function(index, element){
+    $('.modal-header h5').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.modal-body small').each(function(index, element){
+    $('.modal-body small').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.btn.btn-primary1').each(function(index, element){
+    $('.btn.btn-primary1').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.btn.btn-secondary').each(function(index, element){
+    $('.btn.btn-secondary').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    $('.form-check-label').each(function(index, element){
+    $('.form-check-label').each(function(index, element) {
         $(this).text(arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
-    });$('[data-translate]').each(function (index, element) {
+    });
+    $('[data-translate]').each(function(index, element) {
         $(this).attr('placeholder', arrLang[localStorage.getItem(lang)][$(this).attr('key')]);
     });
-    });
+});
 //TEMPLATE
 
 if ('content' in document.createElement('template')) {
