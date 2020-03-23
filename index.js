@@ -259,10 +259,15 @@ function back() {
 }
 
 //CRUD Operations
+var selectedRow = null;
 
 function onFormSubmit() {
     var formData = readFormData();
-    insertNewRecord(formData);
+    if (selectedRow == null)
+        insertNewRecord(formData);
+    else
+        updateRecord(formData)
+    resetForm();
 }
 
 function readFormData() {
@@ -281,25 +286,23 @@ function readFormData() {
 function insertNewRecord(data) {
     var table = document.getElementById("Applications").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
-    cell0 = newRow.insertCell(0);
-    cell0.innerHTML = "-";
-    cell1 = newRow.insertCell(1)
+    cell1 = newRow.insertCell(0)
     cell1.innerHTML = data.fname;
-    cell2 = newRow.insertCell(2);
+    cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.lname;
-    cell3 = newRow.insertCell(3);
+    cell3 = newRow.insertCell(2);
     cell3.innerHTML = data.gender;
-    cell4 = newRow.insertCell(4);
+    cell4 = newRow.insertCell(3);
     cell4.innerHTML = data.driver_license;
-    cell5 = newRow.insertCell(5);
+    cell5 = newRow.insertCell(4);
     cell5.innerHTML = data.email;
-    cell6 = newRow.insertCell(6);
+    cell6 = newRow.insertCell(5);
     cell6.innerHTML = data.age;
-    cell7 = newRow.insertCell(7);
+    cell7 = newRow.insertCell(6);
     cell7.innerHTML = data.pnr;
-    cell8 = newRow.insertCell(8);
+    cell8 = newRow.insertCell(7);
     cell8.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-    <a>Delete</a>`;
+    <a onClick="onDelete(this)">Delete</a>`;
 }
 
 function resetForm() {
@@ -310,7 +313,7 @@ function resetForm() {
     document.getElementById("email").value = "";
     document.getElementById("age").value = "";
     document.getElementById("pnr").value = "";
-
+    selectedRow = null;
 }
 
 function onEdit(td) {
@@ -322,4 +325,22 @@ function onEdit(td) {
     document.getElementById("email").value = selectedRow.cells[4].innerHTML;
     document.getElementById("age").value = selectedRow.cells[5].innerHTML;
     document.getElementById("pnr").value = selectedRow.cells[6].innerHTML;
+}
+
+function onDelete(td) {
+    if (confirm('Are you sure to delete this record?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById("Applications").deleteRow(row.rowIndex);
+        resetForm();
+    }
+}
+
+function updateRecord(formData) {
+    selectedRow.cells[0].innerHTML = formData.fname;
+    selectedRow.cells[1].innerHTML = formData.lname;
+    selectedRow.cells[2].innerHTML = formData.gender;
+    selectedRow.cells[3].innerHTML = formData.driver_license;
+    selectedRow.cells[4].innerHTML = formData.email;
+    selectedRow.cells[5].innerHTML = formData.age;
+    selectedRow.cells[6].innerHTML = formData.pnr;
 }
