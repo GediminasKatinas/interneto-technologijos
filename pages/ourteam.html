@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <a href="#" class="btn " data-toggle="modal" data-target="#application">Try ur best</a>
+    <a href="#" class="btn " style="background-color:red;margin-left:70px;" data-toggle="modal" data-target="#application">forma</a>
     <div class="modal fade" id="application" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
@@ -145,7 +145,7 @@
 
 
                     <div class="md-form mb-4">
-                        <form id="myForm" name="myForm" action="index.html" target="_blank" method="GET">
+                        <form onsubmit="event.preventDefault();onFormSubmit();" id="myForm" name="myForm">
 
                             <label for="fname">First Name:</label>
                             <input type="text" id="fname" name="Name" minlength="2" pattern="[A-Za-z]{1,32}" required oninvalid="this.setCustomValidity('Please Enter valid name using only letters and atleast 2 of them')" oninput="setCustomValidity('')"></input><br>
@@ -155,17 +155,17 @@
                             <input type="text" id="lname" name="LastName"><br>
 
                             <label for="gender">Gender:</label><br>
-                            <input type="radio" id="male" name="gender" value="male">
+                            <input type="radio" id="gender" name="male" value="male">
                             <label for="Male">Male</label>
-                            <input type="radio" id="female" name="gender" value="female">
+                            <input type="radio" id="gender" name="female" value="female">
                             <label for="female">Female</label>
-                            <input type="radio" id="other" name="gender" value="other">
+                            <input type="radio" id="gender" name="other" value="other">
                             <label for="other">Other</label><br>
 
                             <label for="driver_license">Driver License:</label><br>
-                            <label for="driver_licesnse">Yes</label>
+                            <label for="driver_license">Yes</label>
                             <input type="radio" id="driver_license" name="driver_license" value="Yes">
-                            <label for="driver_licesnse">No</label>
+                            <label for="driver_license">No</label>
                             <input type="radio" id="driver_license" name="driver_license" value="No"><br>
 
                             <label for="email">Email:</label>
@@ -187,6 +187,26 @@
             </div>
         </div>
     </div>
+
+    <table class="table table-striped table-dark" id="Applications">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First_Name</th>
+                <th scope="col">Last_Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Drive_license</th>
+                <th scope="col">Email</th>
+                <th scope="col">Age</th>
+                <th scope="col">Phone_Number</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
     <div class="footer">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" style='position:fixed;bottom:45px;right:37%;width:100%;height:100%;z-index:-1;' data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
@@ -214,7 +234,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="../index.js"></script>
 
 </body>
 

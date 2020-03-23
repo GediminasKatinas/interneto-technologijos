@@ -3,10 +3,6 @@
     padding: 0px;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     min-height: 100%;
     position: relative;
@@ -14,7 +10,7 @@ body {
 }
 
 .footeris {
-    position: absolute;
+    position: fixed;
     height: 40px;
     left: 0;
     right: 0;
@@ -25,6 +21,7 @@ body {
 .navbar-brand {
     margin-left: 3%;
     width: auto;
+    display: inline-block;
 }
 
 .nav.navbar-nav.nav-left li.active a {
@@ -34,6 +31,7 @@ body {
     font-size: 13px;
     font-style: bold;
     box-shadow: 0em 0.3em white;
+    display: inline-block;
 }
 
 .nav.navbar-nav.nav-left li a {
@@ -52,7 +50,7 @@ body {
 }
 
 .navbar-nav.ml-auto {
-    display: inline;
+    display: inline-block;
     list-style: none;
     color: red;
     right: 15%;
@@ -85,6 +83,7 @@ body {
     font-weight: 900;
     margin-right: 5rem;
     padding: 10px 20px;
+    display: inline-block;
 }
 
 .navbar-nav.ml-auto li a {
@@ -94,6 +93,7 @@ body {
     font-size: 13px;
     font-style: bold;
     margin-top: 0.3em;
+    display: inline-block;
 }
 
 .col-md-16.col-lg-5 h2 {
@@ -813,4 +813,28 @@ input {
     padding: 3px;
     outline: 0;
     border: 2px solid #B0BEC5;
+}
+
+.calculator {
+    width: 350px;
+    height: 500px;
+    padding: 5px;
+    background-color: grey;
+}
+
+.calculator table,
+tbody,
+td,
+tr {
+    border: none;
+}
+
+.calb {
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: lightgrey;
+    color: goldenrod;
 }

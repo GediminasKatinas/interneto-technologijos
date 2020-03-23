@@ -12,19 +12,21 @@
 
 
 <body>
+
+
     <div id="indexnav"></div>
     <div class="container-fluid padding">
         <div class="row padding">
             <div class="col-md-16 col-lg-5">
-                <h2>Create Stunning Visual Media</h2>
-                <p>Super simple tool to create trendy videos and pictures for your ads, social media, blogs and website. Make your project stand out!</p>
+
+                <h2 key='h2'>Create Stunning Visual Media</h2>
+                <p key='p'>Super simple tool to create trendy videos and pictures for your ads, social media, blogs and website. Make your project stand out!</p>
                 <br>
-                <a href="#" class="btn btn-primary">CREATE DESIGN &#x2192</a>
+                <a href="#" class="btn btn-primary" key='create-design'>CREATE DESIGN &#x2192</a>
                 <br>
             </div>
         </div>
     </div>
-
     <div class="footer">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" style='position:fixed;bottom:45px;right:37%;width:100%;height:100%;z-index:-1;' data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
@@ -33,7 +35,7 @@
                 <input type="radio" name="select" data-target="#carouselExampleIndicators" data-slide-to="2" />
                 <input type="radio" name="select" data-target="#carouselExampleIndicators" data-slide-to="3" />
             </ol>
-            <div class="carousel-inner" data-interval="true">
+            <div class="carousel-inner" data-interval="false">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="Photos/front_page_PNG.png" style='position:fixed;top:0px;left:0px;height:100%;' alt="First slide">
                 </div>
@@ -48,13 +50,11 @@
                 </div>
             </div>
         </div>
+
     </div>
-
     <footer class="footeris">
-        <p>Copyright &copy;2020</p>
+        <p key='copyright'>Copyright&copy;2020</p>
     </footer>
-
-
     <template id="sample">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid">
@@ -67,55 +67,57 @@
                     </a>
                     <ul class="nav navbar-nav nav-left">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html"> HOME</a>
+                            <a class="nav-link" key='home' href="index.html"> HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/products.html">PRODUCTS</a>
+                            <a class="nav-link" key='products' href="pages/products.html">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/templates.html">TEMPLATES</a>
+                            <a class="nav-link" key='templates' href="pages/templates.html">TEMPLATES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/pricing.html">PRICING</a>
+                            <a class="nav-link" key='pricing' href="pages/pricing.html">PRICING</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/aboutus.html">ABOUT US</a>
+                            <a class="nav-link" key='aboutus' href="pages/aboutus.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/ourteam.html">OUR TEAM</a>
+                            <a class="nav-link" key='ourteam' href="pages/ourteam.html">OUR TEAM</a>
                         </li>
                     </ul>
                     <u1 class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" class="btn " data-toggle="modal" data-target="#modalLoginForm">SIGN IN</a>
+                            <a class="nav-link" href="#" class="btn " data-toggle="modal" key='signin' data-target="#modalLoginForm">SIGN IN</a>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm"> SIGN UP</a>
+                                <a class="nav-link" href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal"key='signup' data-target="#modalRegisterForm"> SIGN UP</a>
                             </li>
                     </u1>
+                
                 </div>
+                
                 <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
                             <div class="modal-header text-center">
-                                <h4 class="modal-title w-100">Sign in</h4>
+                                <h4 class="modal-title w-100" key='signin'>Sign in</h4>
                                 <button type="button" class="close" data-dismiss="modal"></button>
                             </div>
                             <div class="modal-body mx-3">
                                 <div class="md-form mb-4">
 
                                     <input type="email" id="defaultForm-email" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                                    <label data-error="wrong" key='email' data-success="right" for="defaultForm-email">Your email</label>
                                 </div>
 
                                 <div class="md-form mb-4">
 
                                     <input type="password" id="defaultForm-pass" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                                    <label data-error="wrong" data-success="right" key='pass' for="defaultForm-pass">Your password</label>
                                 </div>
 
                             </div>
                             <div class="modal-footer d-flex justify-content-center">
-                                <button class="btn">Login</button>
+                                <button class="btn" key='login'>Login</button>
                             </div>
                         </div>
                     </div>
@@ -124,36 +126,45 @@
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
                             <div class="modal-header text-center">
-                                <h4 class="modal-title w-100">Sign up</h4>
+                                <h4 class="modal-title w-100" key='signup'>Sign up</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body mx-3">
                                 <div class="md-form mb-1">
 
                                     <input type="text" id="orangeForm-name" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                                    <label data-error="wrong" data-success="right" key='name' for="orangeForm-name">Your name</label>
                                 </div>
                                 <div class="md-form mb-1">
 
                                     <input type="email" id="orangeForm-email" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                                    <label data-error="wrong" data-success="right" key='email'for="orangeForm-email">Your email</label>
                                 </div>
 
                                 <div class="md-form mb-1">
                                     <input type="password" id="orangeForm-pass" class="form-control validate">
-                                    <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                                    <label data-error="wrong" data-success="right" key='pass' for="orangeForm-pass">Your password</label>
                                 </div>
                             </div>
                             <div class="modal-footer d-flex justify-content-center">
-                                <button class="btn">Sign up</button>
+                                <button class="btn" key='signup'>Sign up</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" key='languages' id="dropdownMenu" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Languages
+                </button>
+                <div class="dropdown-menu"style='margin-left:-25px' aria-labelledby="dropdownMenu" id="dropmenu">
+                    <a class="dropdown-item" key="en" id="en"><span class="flag-icon flag-icon-gb"> </span> English</a>
+                    <a class="dropdown-item" key="lt" id="lt"><span class="flag-icon flag-icon-lt"> </span>
+                        Lithuanian</a>
+                </div>
         </nav>
     </template>
-
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
